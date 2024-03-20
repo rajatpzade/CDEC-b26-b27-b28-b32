@@ -42,13 +42,13 @@
 
 5. Isolation: Docker provides a level of isolation between containers, ensuring that applications running in different containers do not interfere with each other. This enhances security and makes it easier to manage dependencies and versioning.
 
-
  **Install Docker Engine** 
 
 ```
 yum update -y
 ```
 # Install using the rpm repository
+
 ```
  sudo yum install -y yum-utils
 

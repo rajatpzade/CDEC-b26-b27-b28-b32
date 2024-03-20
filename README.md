@@ -67,7 +67,7 @@ yum update -y
 ### Docker command : 
 
 ```
-docker run <image name>  - your container will be created 
+> docker run <image name>  - your container will be created 
 
 docker run -d <image name> - runs your image in detached mode
 

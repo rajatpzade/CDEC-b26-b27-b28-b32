@@ -29,5 +29,7 @@ yum update -y
  sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 # Start Docker
-
- systemctl start docker 
+```
+ systemctl start docker
+ ```
+ 

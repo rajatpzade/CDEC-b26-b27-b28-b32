@@ -12,7 +12,8 @@
 
 
  **Install Docker Engine** 
-'''
+
+
 yum update -y
 '''
 # Install using the rpm repository

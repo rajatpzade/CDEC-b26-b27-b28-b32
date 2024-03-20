@@ -19,3 +19,4 @@ yum update -y
 
 # Start Docker
 
+ systemctl start docker 

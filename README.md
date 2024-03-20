@@ -71,7 +71,7 @@ yum update -y
 
 >docker run -d <image name> - runs your image in detached mode
 
-docker ps    -- running container
+>docker ps    -- running container
 
 docker ps -a -- all containers (exited running)
 

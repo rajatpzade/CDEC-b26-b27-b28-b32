@@ -2,7 +2,7 @@
 
    ## Docker
 
-Install Docker Engine 
+Install Docker Engine
 
 yum update -y 
 

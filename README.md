@@ -16,7 +16,7 @@
 - A command line interface (CLI) ```client docker.```
 
  ---
-
+Key components of Docker include:
 
  **Install Docker Engine** 
 

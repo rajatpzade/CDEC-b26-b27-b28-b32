@@ -109,10 +109,12 @@ docker exec <container id> command - without goin inside container you can execu
 ```
 docker run  -it <image name> command(bash or sh) - can enter inside container or can execute any command into cont
 ```
-
+```
 docker run  <image name> <command> - can execute command in running container
-
+```
+```
 docker stats container_id - will give you container stats
+```
 
 
 port mapping

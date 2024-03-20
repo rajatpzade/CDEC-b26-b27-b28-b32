@@ -89,13 +89,16 @@ docker run -d name containernam imagename  - gives auth name to your container (
 ```
 ```
 docker rename  (cont id 809)  (newname of cont b24) - to rename exiting cont
-
+```
+```
 docker start <container id> - to start the container
-
+```
+```
 docker stop <container id> - to stop the container
-
+```
+```
 docker rm <container id> - to remove container
-
+```
 docker exec -it <container id> bash - can enter into existing 
 container or run any command in it.
 

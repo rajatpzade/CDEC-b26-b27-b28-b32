@@ -7,6 +7,8 @@
 
  [link here](https://docs.docker.com/)
 
+ 
+
 
  ---
 
@@ -32,4 +34,3 @@ yum update -y
 ```
  systemctl start docker
  ```
- 

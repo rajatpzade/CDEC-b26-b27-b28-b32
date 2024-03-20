@@ -64,4 +64,41 @@ yum update -y
 ```
  systemctl start docker
  ```
-#
+### Docker command : 
+
+```
+docker run <image name>  - your container will be created 
+docker run -d <image name> - runs your image in detached mode
+docker ps    -- running container
+docker ps -a -- all containers (exited running)
+docker ps -q -- all the container ids (running)
+docker ps -qa -- all containers ids (exer run --name anup ited running)
+docker run -d name containernam imagename  - gives auth name to your container (while cont is running)
+docker rename  (cont id 809)  (newname of cont b24) - to rename exiting cont
+docker start <container id> - to start the container
+docker stop <container id> - to stop the container
+docker rm <container id> - to remove container
+docker exec -it <container id> bash - can enter into existing container or run any command in it.
+docker exec <container id> command - without goin inside container you can execute command inside it
+docker run  -it <image name> command(bash or sh) - can enter inside container or can execute any command into cont
+docker run  <image name> <command> - can execute command in running container
+docker stats container_id - will give you container stats
+
+
+port mapping
+docker run -p -d 80:80 nginx --- will port map with container's port with hosts port
+docker run  -d -P nginx -- will give map with container's port with hosts random port
+
+docker cp source destination - copies file from source to destination
+docker cp source file container_id:/usr/local/nginx/html/index.html
+/usr/local/apache2/htdocs/html/index.html
+
+docker rm -f `docker ps -qa` - will remove all container at once
+docker rmi -rf `docker ps -qa` - will remove all images
+docker logs containerid - logs of container
+docker stats containerid - docker conatainer stats
+docker top containerid  - docker container id top process viewer
+#docker rmi -f $(docker images -q) - will delete all images at once
+#docker rm -f $(docker ps -a -q)  - will delete all container at once
+docker run  = pull  + create + save
+```

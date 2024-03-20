@@ -78,12 +78,19 @@ docker ps -a -- all containers (exited running)
 docker ps -q -- all the container ids (running)
 
 docker ps -qa -- all containers ids (exer run --name anup ited running)
+
 docker run -d name containernam imagename  - gives auth name to your container (while cont is running)
+
 docker rename  (cont id 809)  (newname of cont b24) - to rename exiting cont
+
 docker start <container id> - to start the container
+
 docker stop <container id> - to stop the container
+
 docker rm <container id> - to remove container
-docker exec -it <container id> bash - can enter into existing container or run any command in it.
+
+docker exec -it <container id> bash - can enter into existing 
+container or run any command in it.
 docker exec <container id> command - without goin inside container you can execute command inside it
 docker run  -it <image name> command(bash or sh) - can enter inside container or can execute any command into cont
 docker run  <image name> <command> - can execute command in running container

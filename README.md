@@ -28,7 +28,7 @@
 
 - Docker Hub: A cloud-based registry service provided by Docker, where users can find and share Docker images. It allows for easy distribution of pre-built images.
 
-**Why docker is used ?
+**Why docker is used ?**
 
  **Install Docker Engine** 
 

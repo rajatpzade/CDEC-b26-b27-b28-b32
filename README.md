@@ -7,7 +7,7 @@
 
  [link here](https://docs.docker.com/)
 
-Install Docker Engine
+** Install Docker Engine ** 
 
 yum update -y
 

@@ -91,9 +91,13 @@ docker rm <container id> - to remove container
 
 docker exec -it <container id> bash - can enter into existing 
 container or run any command in it.
+
 docker exec <container id> command - without goin inside container you can execute command inside it
+
 docker run  -it <image name> command(bash or sh) - can enter inside container or can execute any command into cont
+
 docker run  <image name> <command> - can execute command in running container
+
 docker stats container_id - will give you container stats
 
 

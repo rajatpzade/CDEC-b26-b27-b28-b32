@@ -119,3 +119,4 @@ docker run  <image name> <command> - can execute command in running container
 ```
 docker stats container_id - will give you container stats
 ```
+

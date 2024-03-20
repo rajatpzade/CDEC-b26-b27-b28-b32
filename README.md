@@ -80,11 +80,14 @@ docker ps -a -- all containers (exited running)
 ```
 ```
 docker ps -q -- all the container ids (running)
-
+```
+```
 docker ps -qa -- all containers ids (exer run --name anup ited running)
-
+```
+```
 docker run -d name containernam imagename  - gives auth name to your container (while cont is running)
-
+```
+```
 docker rename  (cont id 809)  (newname of cont b24) - to rename exiting cont
 
 docker start <container id> - to start the container

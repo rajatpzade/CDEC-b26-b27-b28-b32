@@ -116,22 +116,3 @@ docker run  <image name> <command> - can execute command in running container
 ```
 docker stats container_id - will give you container stats
 ```
-
-
-port mapping
-docker run -p -d 80:80 nginx --- will port map with container's port with hosts port
-docker run  -d -P nginx -- will give map with container's port with hosts random port
-
-docker cp source destination - copies file from source to destination
-docker cp source file container_id:/usr/local/nginx/html/index.html
-/usr/local/apache2/htdocs/html/index.html
-
-docker rm -f `docker ps -qa` - will remove all container at once
-docker rmi -rf `docker ps -qa` - will remove all images
-docker logs containerid - logs of container
-docker stats containerid - docker conatainer stats
-docker top containerid  - docker container id top process viewer
-#docker rmi -f $(docker images -q) - will delete all images at once
-#docker rm -f $(docker ps -a -q)  - will delete all container at once
-docker run  = pull  + create + save
-```

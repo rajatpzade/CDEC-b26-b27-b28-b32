@@ -150,4 +150,4 @@ docker run --name <container name> -d -P <image>. --set name
 docker container status 
 ```
 ```
-docker cp index.html 
+docker cp index.html <cont id>:/usr/share

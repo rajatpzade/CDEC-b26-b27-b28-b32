@@ -82,7 +82,7 @@ docker ps    -- running container
 ```
 docker ps -a -- all containers (exited running)
 
-
+docker top <cont id>
 ```
 ```
 docker ps -q -- all the container ids (running)

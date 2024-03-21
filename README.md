@@ -148,3 +148,4 @@ docker run --name <container name> -d -P <image>. --set name
 
 ```
 docker container status 
+```

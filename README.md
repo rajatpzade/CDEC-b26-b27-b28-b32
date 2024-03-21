@@ -79,6 +79,7 @@ docker run -d <image name> - runs your image in detached mode
 ```
 docker ps    -- running container
 ```
+
 ```
 docker ps -a -- all containers (exited running)
 
@@ -88,6 +89,7 @@ docker inspect <container id>   --detail info of cont
 
 
 ```
+
 ```
 docker ps -q -- all the container ids (running)
 ```

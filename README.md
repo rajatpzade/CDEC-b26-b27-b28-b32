@@ -143,4 +143,4 @@ docker stats container_id - will give you container stats
 ```
 
 ```
-docker run --name <container name> 
+docker run --name <container name> -d -P 

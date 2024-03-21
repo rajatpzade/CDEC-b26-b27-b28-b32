@@ -91,7 +91,7 @@ docker top <cont id> --check process to container
 docker inspect <container id>   --detail info of cont
 ```
 ```
-docker run -p 8080:80 
+docker run -p 8080:80 <image id>
 
 ```
 docker ps -q -- all the container ids (running)

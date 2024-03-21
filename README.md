@@ -147,4 +147,4 @@ docker run --name <container name> -d -P <image>. --set name
 ```
 
 ```
-docker co
+docker container status 

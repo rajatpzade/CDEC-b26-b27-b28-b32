@@ -83,6 +83,8 @@ docker ps    -- running container
 docker ps -a -- all containers (exited running)
 
 docker top <cont id> --check process to container 
+
+docker inspect 
 ```
 ```
 docker ps -q -- all the container ids (running)

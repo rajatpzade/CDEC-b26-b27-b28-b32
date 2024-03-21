@@ -90,8 +90,7 @@ docker top <cont id> --check process to container
 ```
 docker inspect <container id>   --detail info of cont
 ```
-```
-docker 
+
 
 ```
 docker ps -q -- all the container ids (running)

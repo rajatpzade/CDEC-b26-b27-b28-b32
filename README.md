@@ -93,9 +93,10 @@ docker inspect <container id>   --detail info of cont
 ```
 docker run -d -p 8080:80 <image id> --assign specific port expose outside
 ```
-```
-netstat -tulpn
 
+```
+netstat -tulpn   -->
+```
 ```
 docker ps -q -- all the container ids (running)
 ```

@@ -108,7 +108,7 @@ netstat -tulpn   --> check ports
 docker ps -q -- all the container ids (running)
 ```
 ```
-docker ps -qa -- all containers ids (exer run --name anup ited running)
+docker ps -qa -- all containers ids (exer run --name  ited running)
 ```
 ```
 docker run -d name containernam imagename  - gives auth name to your container (while cont is running)

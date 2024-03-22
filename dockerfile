@@ -14,4 +14,4 @@ CMD httpd -DFOREGROUND
 
 ---
 
-
+FROM baseImage

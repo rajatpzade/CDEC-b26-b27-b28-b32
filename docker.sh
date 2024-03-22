@@ -1,4 +1,4 @@
-#!/bin
+#!/bin/bash 
 
 # docker installation on ubuntu 
 

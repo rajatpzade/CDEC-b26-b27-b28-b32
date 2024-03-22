@@ -8,7 +8,4 @@ RUN echo "<h1> Hello world </h1>" > /var/www/html/index.html
 
 
 
-
-RUN httpd 
-
 CMD httpd -DFOREGROUND

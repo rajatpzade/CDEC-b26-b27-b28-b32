@@ -24,7 +24,7 @@ WORKDIR /opt/apache-tomcat-8.5.99
 
 RUN yum install epel-release -y 
 
-Run 
+RUN command
 
 
 

@@ -22,7 +22,9 @@ RUN tar -xzf apache-tomcat-8.5.99.tar.gz -C /opt/
 
 WORKDIR /opt/apache-tomcat-8.5.99
 
-RUN yum install epel-release
+RUN yum install epel-release -y 
+
+Run 
 
 
 

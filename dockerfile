@@ -13,3 +13,5 @@ CMD httpd -DFOREGROUND
 FROM 
 CMD [ "executable" ]
 COPY source dest
+RUN 
+ENTRYPOINT [ "executable" ]

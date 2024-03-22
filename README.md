@@ -169,3 +169,5 @@ docker tag <container id> newname:tag
 
 docker build .   # docker file location 
 
+
+

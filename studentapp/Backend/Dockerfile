@@ -1,7 +1,7 @@
 FROM centos:7
 
 LABEL APP="Studentapp"
-LABEL Auth=""
+LABEL Auth="devops"
 USER root
 WORKDIR /opt/
 ADD https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.99/bin/apache-tomcat-8.5.99.tar.gz .

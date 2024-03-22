@@ -20,3 +20,6 @@ ADD Curl -O https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.99/bin/apache-tomcat-8
 
 RUN tar -xzf apache-tomcat-8.5.99.tar.gz -C /opt/
 
+WORKDIR /the/workdir/path
+
+

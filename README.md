@@ -166,3 +166,4 @@ docker prune
 
 ### docker file
 
+docker build 

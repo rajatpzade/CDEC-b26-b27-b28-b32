@@ -1,6 +1,6 @@
 FROM centos:7
 
 LABEL author "rajatz"
-LABEL desc "my first dockr"
+LABEL desc "my first docker file"
 
-RUN command
+RUN 

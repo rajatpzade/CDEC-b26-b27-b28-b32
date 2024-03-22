@@ -14,4 +14,6 @@ CMD httpd -DFOREGROUND
 
 ---
 
-FROM baseImage
+FROM centos:7
+
+

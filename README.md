@@ -154,3 +154,6 @@ docker cp index.html <cont id>:/usr/share/nginx/html/index.html ---cp file to th
 ```
 
 ### working with container Images 
+
+```
+docker images 

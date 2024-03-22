@@ -6,6 +6,6 @@ LABEL desc "my first docker file"
 RUN yum install httpd -y 
 RUN echo "<h1> Hello world </h1>" > /var/www/html/index.html
 
-EXPOSE 
+EXPOSE 8080
 
 CMD httpd -DFOREGROUND

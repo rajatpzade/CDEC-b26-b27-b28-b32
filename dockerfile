@@ -1,3 +1,3 @@
 FROM centos:7
 
-LABEL key="value"
+LABEL author ="value"

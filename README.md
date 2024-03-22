@@ -158,4 +158,4 @@ docker cp index.html <cont id>:/usr/share/nginx/html/index.html ---cp file to th
 ```
 docker images                 ### list all images in host machine
 docker images ls              ### same as a list 
-docker pull <>
+docker pull <image name>.     ### 

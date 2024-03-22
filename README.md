@@ -163,6 +163,7 @@ docker image rm <image name>
 docker rmi <image id>
 docker prune 
 docker tag <container id> newname:tag
+docker ps -aq
 ```
 
 ### docker file

@@ -35,3 +35,5 @@ EXPOSE 8080
 CMD ["catalina.sh", "start"]
 
 
+
+FROM baseImage

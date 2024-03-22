@@ -163,3 +163,6 @@ docker image rm <image name>
 docker rmi <image id>
 docker prune 
 ```
+
+### docker file
+

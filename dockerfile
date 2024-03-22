@@ -26,7 +26,7 @@ RUN yum install epel-release -y
 
 RUN yum install java-11-openjdk-devel
 
-
+WORKDIR /the/workdir/path
 
 
 

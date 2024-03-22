@@ -36,4 +36,7 @@ CMD ["catalina.sh", "start"]
 
 
 
-FROM baseImage
+FROM 
+RUN 
+CMD [ "
+" ]

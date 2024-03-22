@@ -2,4 +2,4 @@ FROM centos:7
 
 LABEL author "rajatz"
 
-R
+RUN command

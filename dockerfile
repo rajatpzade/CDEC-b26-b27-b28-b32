@@ -40,3 +40,5 @@ FROM
 RUN 
 CMD [ "
 " ]
+ENTRYPOINT [ "executable" ]
+WORKDIR /the/workdir/path

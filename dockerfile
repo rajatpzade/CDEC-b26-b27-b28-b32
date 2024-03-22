@@ -11,4 +11,4 @@ EXPOSE 80
 CMD httpd -DFOREGROUND
 
 FROM 
-C
+CMD [ "executable" ]

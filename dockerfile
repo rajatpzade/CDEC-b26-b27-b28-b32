@@ -24,7 +24,9 @@ WORKDIR /opt/apache-tomcat-8.5.99
 
 RUN yum install epel-release -y 
 
-RUN command
+RUN install java-11-openjdk-devel
+
+
 
 
 

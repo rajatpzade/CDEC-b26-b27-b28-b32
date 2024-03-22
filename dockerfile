@@ -30,6 +30,7 @@ WORKDIR webapps
 
 ADD curl -O https://s3-us-west-2.amazonaws.com/studentapi-cit/student.war 
 
-
+EXPOSE port
+CMD ["catalina.sh", "start"]
 
 

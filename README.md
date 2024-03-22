@@ -162,6 +162,7 @@ docker pull <image name>.     ### pull docker image
 docker image rm <image name>
 docker rmi <image id>
 docker prune 
+docker tag <c=>
 ```
 
 ### docker file

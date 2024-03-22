@@ -12,3 +12,4 @@ CMD httpd -DFOREGROUND
 
 FROM 
 CMD [ "executable" ]
+COPY source dest

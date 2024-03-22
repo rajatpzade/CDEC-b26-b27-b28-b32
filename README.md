@@ -152,3 +152,5 @@ docker container status
 ```
 docker cp index.html <cont id>:/usr/share/nginx/html/index.html ---cp file to the container
 ```
+
+#

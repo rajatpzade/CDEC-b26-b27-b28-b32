@@ -11,3 +11,4 @@ RUN echo "<h1> Hello world </h1>" > /var
 
 RUN httpd 
 
+CMD [ "executable" ]

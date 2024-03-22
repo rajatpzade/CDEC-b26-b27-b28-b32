@@ -166,4 +166,5 @@ docker prune
 
 ### docker file
 
-docker build 
+docker build .   # docker file location 
+

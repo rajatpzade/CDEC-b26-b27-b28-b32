@@ -30,6 +30,6 @@ WORKDIR webapps
 
 ADD curl -O https://s3-us-west-2.amazonaws.com/studentapi-cit/student.war 
 
-
+WORKDIR /the/workdir/path
 
 

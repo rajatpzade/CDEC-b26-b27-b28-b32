@@ -1,6 +1,6 @@
 FROM centos:7
 
 LABEL author "rajatz"
-LABEL key="value"
+LABEL desc "value"
 
 RUN command

@@ -4,4 +4,4 @@ LABEL author "rajatz"
 LABEL desc "my first docker file"
 
 RUN yum install httpd
-RUN 
+RUN httpd 

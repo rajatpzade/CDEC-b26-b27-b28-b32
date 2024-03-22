@@ -36,9 +36,3 @@ CMD ["catalina.sh", "start"]
 
 
 
-FROM 
-RUN 
-CMD [ "
-" ]
-ENTRYPOINT [ "executable" ]
-WORKDIR /the/workdir/path

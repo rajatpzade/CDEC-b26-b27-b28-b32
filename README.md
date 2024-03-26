@@ -165,6 +165,7 @@ docker prune
 docker tag <container id> newname:tag
 docker ps -aq
 docker rm $(docker ps -aq)
+docker image rm $(docker images -aq)
 ```
 
 ### docker file

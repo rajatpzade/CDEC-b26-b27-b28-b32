@@ -172,5 +172,9 @@ docker image rm $(docker images -aq)
 
 docker build .   # docker file location 
 
+docker build -t database:myapp .
+
+
+
 
 

@@ -167,7 +167,7 @@ docker ps -aq
 docker rm $(docker ps -aq)
 docker image rm $(docker images -aq)
 ```
-
+mysql -p1234 
 ### docker file
 
 docker build .   # docker file location 

@@ -174,7 +174,7 @@ docker build .   # docker file location
 
 docker build -t database:myapp .
 
-
+docker run --name studentapp_db -d -P database:myapp 
 
 
 

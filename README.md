@@ -196,6 +196,7 @@ docker build -t database:myapp .
 
 docker run --name studentapp_db -d -P database:myapp
 
+mysql -h <hostname> -u <user> -p<password>
 DOCKER IMAGES
 172.17.0.2
 docker build Dockerfilelocation - builds docker image

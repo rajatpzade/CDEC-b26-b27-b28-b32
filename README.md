@@ -190,7 +190,7 @@ mysql -p1234
 
 ### docker file
 
-docker build.   # docker file location
+docker build .   # docker file location
 
 docker build -t database:myapp .
 

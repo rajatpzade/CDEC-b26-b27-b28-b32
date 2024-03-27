@@ -176,5 +176,84 @@ docker build -t database:myapp .
 
 docker run --name studentapp_db -d -P database:myapp 
 
+DOCKER IMAGES
+172.17.0.2
+docker build Dockerfilelocation - builds docker image
 
+basic syntax of docker file -
+----------------------------------
+INSTRUCTION arguments
+-----------------------------------
+LABEL  KEY = VALUE     - gives metadata ,label ,identity ,labels are visible by docker inspect
+for eg 
+LABEL  devops = "Anup"
+----------------------------------
+FROM  baseimagename  -  provides a baseimage on which layers are created or ran
+for eg
+FROM centos:7
+--------------------------------
+RUN command         - Run instruction to start and create the required file structure 
+                      that you need and install some required software dependencies
+for eg
+RUN yum install httpd -y
+
+--------------------------------
+EXPOSE port       - exposing the container to a port 
+for eg
+EXPOSE 80
+--------------------------------
+
+CMD   defines the command that launches the process , that you want to run within container
+for eg- can be overridden , replced as well
+
+CMD ["executable","param1","param2"]
+CMD ["httpd" , "-DFOREGROUND"]
+
+CMD command param1 param2 
+CMD httpd -DFOREGROUND
+----------------------------------
+
+WORKDIR  - you can change the working directory in the image for remainig build instructions
+WORKDIR pathhway of destination
+----------------------------------
+COPY    - is used to copy files from the local system into your image.
+COPY source destination
+-----------------------------------
+ADD     - is used when you want to retrieve data from remote location into your image and
+          container.
+
+ADD source destination 
+-----------------------------------
+USER 
+USER root - preferance of user can be performed using this argument.
+-----------------------------------
+ENTRYPOINT  - the mentioned executable using Entrypoint.
+              by default the mentioned executable will and can be replace only and only by 
+              sudo docker run --entrypoint [new_command] [docker_image] [optional:value] , i.e
+              entrypoint flag only.  
+ENTRYPOINT ["executable" , "param1"]
+ENTRYPOINT  executable param1 param2 
+------------------------------------
+HEALTHCHECK - checking health of container on startup
+------------------------------------
+SOURCE - H/W
+------------------------------------
+ENV    - to pass variables
+-------------------------------------
+ARG    - to pass enviornment variables
+ARG <name>[=<default value>]
+-------------------------------------
+SHELL - set default shell to image
+SHELL SHELL ["powershell", "-command"]
+---------------------------------------
+volume
+volume [/mnt] - create volume mounts 
+---------------------------------------
+STOPSIGNAL - kind of working like kill -9 will stop the container process.
+---------------------------------------
+ONBUILD - to provide instruction during when image is used in build.
+ONBUILD instruction
+ONBUILD RUN echo "this image is now built"
+ONBUILD RUN yum install httpd -y
+------------------------------------------------------------
 

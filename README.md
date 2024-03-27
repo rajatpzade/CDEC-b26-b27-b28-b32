@@ -201,6 +201,7 @@ show databases;
 use studentapp;
 show tables;
  desc students;
+ select * from students;
  
 
 

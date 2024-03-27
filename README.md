@@ -198,8 +198,10 @@ docker run --name studentapp_db -d -P database:myapp
 
 mysql -h <hostname> -u <user> -p<password>
 show databases;
+use studentapp;
 show tables;
  desc students;
+ 
 
 
 DOCKER IMAGES

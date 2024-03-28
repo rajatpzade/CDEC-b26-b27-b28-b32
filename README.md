@@ -271,7 +271,7 @@ ADD source destination
 
 USER
 USER root - preferance of user can be performed using this argument
------------------------------------
+
 
 ENTRYPOINT  - the mentioned executable using Entrypoint.
               by default the mentioned executable will and can be replace only and only by
@@ -279,24 +279,24 @@ ENTRYPOINT  - the mentioned executable using Entrypoint.
               entrypoint flag only.  
 ENTRYPOINT ["executable" , "param1"]
 ENTRYPOINT  executable param1 param2
-------------------------------------
+
 
 HEALTHCHECK - checking health of container on startup
-------------------------------------
+
 
 SOURCE - H/W
-------------------------------------
+
 
 ENV    - to pass variables
--------------------------------------
+-
 
 ARG    - to pass enviornment variables
 ARG <name>[=<default value>]
--------------------------------------
+
 
 SHELL - set default shell to image
 SHELL SHELL ["powershell", "-command"]
----------------------------------------
+---
 
 volume
 volume [/mnt] - create volume mounts

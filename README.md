@@ -179,10 +179,15 @@ docker images   ->list all images in host machine
 docker images ls  ### same as a list 
 
 docker pull <image name>.     ### pull docker image 
+
 docker image rm <image name>
+
 docker rmi <image id>
+
 docker prune 
+
 docker tag <container id> newname:tag
+
 docker ps -aq
 docker rm $(docker ps -aq)
 docker image rm $(docker images -aq)

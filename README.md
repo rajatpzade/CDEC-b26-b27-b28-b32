@@ -316,13 +316,16 @@ DOCKER network drivers or docker network types
 ```
 bridge - to connect two different networks , create bridge between two diff networks.
 ```
-```
-(eg communication between host and docker container is possible because of bridge)
 
+(eg communication between host and docker container is possible because of bridge)
+```
 overlay - to communicate two containers that are present in two seprate networks(hosts) using
 docker swarm.
+```
+```
 none -  doesnt have any ip attached to it to keep your container completely isolated and 
 ensure this container is kept as a backup container.
+```
 host -  the container will get host ip that is localhost ip 
 macvlan - to give physical identity , to make appear as physical ,allocating physical
 address to container

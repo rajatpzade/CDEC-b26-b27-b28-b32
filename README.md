@@ -320,8 +320,9 @@ assign customize ip to container,i.e take control over ipv4 or ipv6 assigning.
 ## Dockernetwork commands
 
 docker network create --subnet "192.168.0.0/16" --driver bridge newnetwork
- 
+
 docker network ls 
+
 docker run -d -P --network newnetwork nginx
 docker run -d -p --network host httpd
 docker run -d -p --network <network_driver_type> image name

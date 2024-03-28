@@ -9,7 +9,7 @@
 
 ### docker-architecture
 
-![docker](/.img/)
+![docker](/.img/docker-architecture%20.jpg)
 
  [docker official link here](https://docs.docker.com/)
 

@@ -258,17 +258,16 @@ CMD httpd -DFOREGROUND
 
 WORKDIR  - you can change the working directory in the image for remainig build instructions
 WORKDIR pathhway of destination
-----------------------------------
+
 
 COPY    - is used to copy files from the local system into your image.
 COPY source destination
------------------------------------
+
 
 ADD     - is used when you want to retrieve data from remote location into your image and
           container.
 
 ADD source destination
------------------------------------
 
 USER
 USER root - preferance of user can be performed using this argument

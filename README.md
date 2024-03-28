@@ -367,6 +367,8 @@ docker -d -p -v newvol1:/usr/local/apache2/htdocs/  httpd
 ```
 ```
 docker -d -p -v newvol1:/usr/share/nginx/html/  nginx
+```
+
 root dir location - /var/lib/docker/volumes
 mkdir /mnt/voldir
 docker -d -p -v /mnt/voldir:/usr/local/tomcat/ tomcat

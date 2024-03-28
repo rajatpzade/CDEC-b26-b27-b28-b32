@@ -313,8 +313,10 @@ ONBUILD RUN yum install httpd -y
 ## Docker Network
 
 DOCKER network drivers or docker network types
-
+```
 bridge - to connect two different networks , create bridge between two diff networks.
+```
+```
 (eg communication between host and docker container is possible because of bridge)
 
 overlay - to communicate two containers that are present in two seprate networks(hosts) using

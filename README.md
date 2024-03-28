@@ -336,10 +336,10 @@ IPvlan - we use this network to provide ipv4 and ipv6 addresss of our choice or
 assign customize ip to container,i.e take control over ipv4 or ipv6 assigning.
 ```
 
-## Dockernetwork commands
-
+## Docker-network commands
+```
 docker network create --subnet "192.168.0.0/16" --driver bridge newnetwork
-
+```
 docker network ls 
 
 docker run -d -P --network newnetwork nginx

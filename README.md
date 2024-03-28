@@ -239,12 +239,12 @@ RUN command         - Run instruction to start and create the required file stru
 for eg
 RUN yum install httpd -y
 
---------------------------------
+
 
 EXPOSE port       - exposing the container to a port
 for eg
 EXPOSE 80
---------------------------------
+
 
 CMD   defines the command that launches the process , that you want to run within container
 for eg- can be overridden , replced as well
@@ -254,7 +254,7 @@ CMD ["httpd" , "-DFOREGROUND"]
 
 CMD command param1 param2
 CMD httpd -DFOREGROUND
-----------------------------------
+
 
 WORKDIR  - you can change the working directory in the image for remainig build instructions
 WORKDIR pathhway of destination

@@ -174,15 +174,24 @@ docker cp index.html <cont id>:/usr/share/nginx/html/index.html ---cp file to th
 ### working with container Images
 
 ```
-docker images                 ### list all images in host machine
-docker images ls              ### same as a list 
+docker images   ->list all images in host machine
+
+docker images ls  ### same as a list 
+
 docker pull <image name>.     ### pull docker image 
+
 docker image rm <image name>
+
 docker rmi <image id>
+
 docker prune 
+
 docker tag <container id> newname:tag
+
 docker ps -aq
+
 docker rm $(docker ps -aq)
+
 docker image rm $(docker images -aq)
 ```
 
@@ -209,33 +218,33 @@ DOCKER IMAGES
 172.17.0.2
 docker build Dockerfilelocation - builds docker image
 
-basic syntax of docker file -
-----------------------------------
+## basic syntax of docker file -
+
 
 INSTRUCTION arguments
------------------------------------
+
 
 LABEL  KEY = VALUE     - gives metadata ,label ,identity ,labels are visible by docker inspect
 for eg
-LABEL  devops = "Anup"
-----------------------------------
+LABEL  devops = "rajatz"
+
 
 FROM  baseimagename  -  provides a baseimage on which layers are created or ran
 for eg
 FROM centos:7
---------------------------------
+
 
 RUN command         - Run instruction to start and create the required file structure
                       that you need and install some required software dependencies
 for eg
 RUN yum install httpd -y
 
---------------------------------
+
 
 EXPOSE port       - exposing the container to a port
 for eg
 EXPOSE 80
---------------------------------
+
 
 CMD   defines the command that launches the process , that you want to run within container
 for eg- can be overridden , replced as well
@@ -245,25 +254,24 @@ CMD ["httpd" , "-DFOREGROUND"]
 
 CMD command param1 param2
 CMD httpd -DFOREGROUND
-----------------------------------
+
 
 WORKDIR  - you can change the working directory in the image for remainig build instructions
 WORKDIR pathhway of destination
-----------------------------------
+
 
 COPY    - is used to copy files from the local system into your image.
 COPY source destination
------------------------------------
+
 
 ADD     - is used when you want to retrieve data from remote location into your image and
           container.
 
 ADD source destination
------------------------------------
 
 USER
 USER root - preferance of user can be performed using this argument
------------------------------------
+
 
 ENTRYPOINT  - the mentioned executable using Entrypoint.
               by default the mentioned executable will and can be replace only and only by
@@ -271,67 +279,96 @@ ENTRYPOINT  - the mentioned executable using Entrypoint.
               entrypoint flag only.  
 ENTRYPOINT ["executable" , "param1"]
 ENTRYPOINT  executable param1 param2
-------------------------------------
+
 
 HEALTHCHECK - checking health of container on startup
-------------------------------------
+
 
 SOURCE - H/W
-------------------------------------
+
 
 ENV    - to pass variables
--------------------------------------
+-
 
 ARG    - to pass enviornment variables
 ARG <name>[=<default value>]
--------------------------------------
+
 
 SHELL - set default shell to image
 SHELL SHELL ["powershell", "-command"]
----------------------------------------
+
 
 volume
 volume [/mnt] - create volume mounts
----------------------------------------
+
 
 STOPSIGNAL - kind of working like kill -9 will stop the container process
----------------------------------------
+
 
 ONBUILD - to provide instruction during when image is used in build.
 ONBUILD instruction
 ONBUILD RUN echo "this image is now built"
 ONBUILD RUN yum install httpd -y
-------------------------------------------------------------
+
 ## Docker Network
 
 DOCKER network drivers or docker network types
+```
 bridge - to connect two different networks , create bridge between two diff networks.
+```
+
 (eg communication between host and docker container is possible because of bridge)
+```
 overlay - to communicate two containers that are present in two seprate networks(hosts) using
 docker swarm.
+```
+```
 none -  doesnt have any ip attached to it to keep your container completely isolated and 
 ensure this container is kept as a backup container.
+```
+```
 host -  the container will get host ip that is localhost ip 
 macvlan - to give physical identity , to make appear as physical ,allocating physical
 address to container
+```
+```
 IPvlan - we use this network to provide ipv4 and ipv6 addresss of our choice or
 assign customize ip to container,i.e take control over ipv4 or ipv6 assigning.
+```
 
-## Dockernetwork commands
-
+## Docker-network commands
+```
 docker network create --subnet "192.168.0.0/16" --driver bridge newnetwork
-
+```
+```
 docker network ls 
-
+```
+```
 docker run -d -P --network newnetwork nginx
+```
+```
 docker run -d -p --network host httpd
+````
+```
 docker run -d -p --network <network_driver_type> image name
------------------------------------------------------------------------
+ ```
+ 
+ ## Docker Volume
+
+ ```
 Docker Volume
+```
+```
 docker volume ls
+```
+```
 docker volume create newvol1
 docker -d -p -v newvol1:/usr/local/apache2/htdocs/  httpd
+```
+```
 docker -d -p -v newvol1:/usr/share/nginx/html/  nginx
+```
+
 root dir location - /var/lib/docker/volumes
 mkdir /mnt/voldir
 docker -d -p -v /mnt/voldir:/usr/local/tomcat/ tomcat

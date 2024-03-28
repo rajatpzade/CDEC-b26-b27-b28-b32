@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+Tue Mar 26 2024 11:09:14 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* studentapp/.DS_Store
+* studentapp/studentsapp-updated/.DS_Store
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:

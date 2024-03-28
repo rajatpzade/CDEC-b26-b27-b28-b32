@@ -219,7 +219,7 @@ DOCKER IMAGES
 docker build Dockerfilelocation - builds docker image
 
 basic syntax of docker file -
-----------------------------------
+
 
 INSTRUCTION arguments
 -----------------------------------

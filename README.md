@@ -355,8 +355,10 @@ docker run -d -p --network <network_driver_type> image name
  
  ## Docker Volume
 
- 
+ ```
 Docker Volume
+```
+```
 docker volume ls
 docker volume create newvol1
 docker -d -p -v newvol1:/usr/local/apache2/htdocs/  httpd

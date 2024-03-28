@@ -3,13 +3,13 @@
 **How to Write Markdown file**
 [link here](https://github.com/DavidAnson/markdownlint/blob/v0.33.0/doc/md023.md)
 
-![docker](/.img/download.png)
+![docker](/download.png)
 
 ---
 
 ### docker-architecture
 
-![docker](/download.png)
+![docker](/docker-architecture%20.jpg)
 
  [docker official link here](https://docs.docker.com/)
 

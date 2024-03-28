@@ -326,11 +326,15 @@ docker swarm.
 none -  doesnt have any ip attached to it to keep your container completely isolated and 
 ensure this container is kept as a backup container.
 ```
+```
 host -  the container will get host ip that is localhost ip 
 macvlan - to give physical identity , to make appear as physical ,allocating physical
 address to container
+```
+```
 IPvlan - we use this network to provide ipv4 and ipv6 addresss of our choice or
 assign customize ip to container,i.e take control over ipv4 or ipv6 assigning.
+```
 
 ## Dockernetwork commands
 

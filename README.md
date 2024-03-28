@@ -302,3 +302,32 @@ ONBUILD instruction
 ONBUILD RUN echo "this image is now built"
 ONBUILD RUN yum install httpd -y
 ------------------------------------------------------------
+Docker Network
+DOCKER network drivers or docker network types
+bridge - to connect two different networks , create bridge between two diff networks.
+(eg communication between host and docker container is possible because of bridge)
+overlay - to communicate two containers that are present in two seprate networks(hosts) using
+docker swarm.
+none -  doesnt have any ip attached to it to keep your container completely isolated and 
+ensure this container is kept as a backup container.
+host -  the container will get host ip that is localhost ip 
+macvlan - to give physical identity , to make appear as physical ,allocating physical
+address to container
+IPvlan - we use this network to provide ipv4 and ipv6 addresss of our choice or
+assign customize ip to container,i.e take control over ipv4 or ipv6 assigning.
+
+Dockernetwork commands
+docker network create --subnet "192.168.0.0/16" --driver bridge newnetwork 
+docker network ls 
+docker run -d -P --network newnetwork nginx
+docker run -d -p --network host httpd
+docker run -d -p --network <network_driver_type> image name
+-----------------------------------------------------------------------
+Docker Volume
+docker volume ls
+docker volume create newvol1
+docker -d -p -v newvol1:/usr/local/apache2/htdocs/  httpd
+docker -d -p -v newvol1:/usr/share/nginx/html/  nginx
+root dir location - /var/lib/docker/volumes
+mkdir /mnt/voldir
+docker -d -p -v /mnt/voldir:/usr/local/tomcat/ tomcat

@@ -226,8 +226,8 @@ INSTRUCTION arguments
 
 LABEL  KEY = VALUE     - gives metadata ,label ,identity ,labels are visible by docker inspect
 for eg
-LABEL  devops = "Anup"
--
+LABEL  devops = "rajatz"
+
 
 FROM  baseimagename  -  provides a baseimage on which layers are created or ran
 for eg

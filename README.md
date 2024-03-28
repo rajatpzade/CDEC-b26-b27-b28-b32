@@ -218,16 +218,16 @@ DOCKER IMAGES
 172.17.0.2
 docker build Dockerfilelocation - builds docker image
 
-basic syntax of docker file -
+## basic syntax of docker file -
 
 
 INSTRUCTION arguments
------------------------------------
+
 
 LABEL  KEY = VALUE     - gives metadata ,label ,identity ,labels are visible by docker inspect
 for eg
 LABEL  devops = "Anup"
-----------------------------------
+-
 
 FROM  baseimagename  -  provides a baseimage on which layers are created or ran
 for eg

@@ -302,7 +302,8 @@ ONBUILD instruction
 ONBUILD RUN echo "this image is now built"
 ONBUILD RUN yum install httpd -y
 ------------------------------------------------------------
-Docker Network
+## Docker Network
+
 DOCKER network drivers or docker network types
 bridge - to connect two different networks , create bridge between two diff networks.
 (eg communication between host and docker container is possible because of bridge)

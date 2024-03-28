@@ -232,7 +232,7 @@ LABEL  devops = "rajatz"
 FROM  baseimagename  -  provides a baseimage on which layers are created or ran
 for eg
 FROM centos:7
---------------------------------
+
 
 RUN command         - Run instruction to start and create the required file structure
                       that you need and install some required software dependencies

@@ -53,7 +53,7 @@ kubectl describe pod my-first-pod
   
       * Nodeport -> expose app outside the cluster
    
-   kubectl expose pod 
+   kubectl expose pod my-first-pod --port=80 
 
       * Loadbalancer -> expose app outside the cluster
   

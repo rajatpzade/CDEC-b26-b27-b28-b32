@@ -52,6 +52,7 @@ kubectl describe pod my-first-pod
       * Loadbalancer -> expose app outside the cluster
   
    1. Namespace
+   
    2. Replicaset
    3. Deployement
    4. DaemonSet

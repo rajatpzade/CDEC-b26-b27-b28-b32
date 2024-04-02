@@ -49,7 +49,7 @@ kubectl describe pod my-first-pod
 
     kubectl expose pod my-first-pod --port=80 --type=ClusterIP
 
-    kubectl 
+    kubectl get services
   
       * Nodeport -> expose app outside the cluster
   

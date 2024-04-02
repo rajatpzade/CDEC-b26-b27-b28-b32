@@ -52,7 +52,8 @@ kubectl describe pod my-first-pod
     kubectl get services
   
       * Nodeport -> expose app outside the cluster
-  
+   
+   
       * Loadbalancer -> expose app outside the cluster
   
    1. Namespace

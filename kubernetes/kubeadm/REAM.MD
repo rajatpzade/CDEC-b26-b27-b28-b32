@@ -56,10 +56,14 @@ kubectl describe pod my-first-pod
    kubectl expose pod my-first-pod --port=80 --target-port=80 --type=NodePort
 
    kubectl expose pod my-first-pod --name new  --port=80 --target-port=80 --type=NodePort
-   
+
 
       * Loadbalancer -> expose app outside the cluster
-  
+
+
+    kubectl expose pod my-first-pod --name my-lb --type=LoadBalancer --port=80 --target-port=80 
+    
+
    1. Namespace
    
    2. Replicaset

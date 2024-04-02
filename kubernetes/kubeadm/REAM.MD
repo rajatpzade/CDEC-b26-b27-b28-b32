@@ -53,7 +53,8 @@ kubectl describe pod my-first-pod
   
       * Nodeport -> expose app outside the cluster
    
-   
+   kubectl expose pod 
+
       * Loadbalancer -> expose app outside the cluster
   
    1. Namespace

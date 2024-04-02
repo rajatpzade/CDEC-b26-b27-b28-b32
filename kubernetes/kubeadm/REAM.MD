@@ -60,11 +60,14 @@ kubectl describe pod my-first-pod
    7. DaemonSet
 
    8. statefulset
+
    9.  ConfigMap
+   
    10. Secrets
-   11. Pv and Pvc
-   12. RBAC
-   13. Ingress Gateway
+   11. 
+   12. Pv and Pvc
+   13. RBAC
+   14. Ingress Gateway
 
 ---
 ## Manifest 

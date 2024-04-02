@@ -47,7 +47,9 @@ kubectl describe pod my-first-pod
 
       * ClusterIP -> interal communication inside the cluster
 
+    kubectl expose pod my-first-pod --port=80 --type=ClusterIP
 
+    
   
       * Nodeport -> expose app outside the cluster
   

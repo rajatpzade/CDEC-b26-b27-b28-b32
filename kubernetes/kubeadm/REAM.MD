@@ -96,4 +96,6 @@ syntax:
    key: value
 
  ## address
+   city: pune
+   state: MH
      

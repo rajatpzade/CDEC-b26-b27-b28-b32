@@ -1,18 +1,16 @@
-apiVersion: autoscaling/v2
-kind: HorizontalPodAutoscaler
+apiVersion: v1
+kind: Pod
 metadata:
   name: myapp
-spec:
-  scaleTargetRef:
-    apiVersion: apps/v1
-    kind: Deployment
+  labels:
     name: myapp
-  minReplicas: 1
-  maxReplicas: 3
-  metrics:
-  - type: Resource
-    resource:
-      name: cpu
-      target:
-        type: Utilization
-        averageUtilization: 50
+spec:
+  containers:
+  - name: myapp
+    image: <Image>
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: <Port>

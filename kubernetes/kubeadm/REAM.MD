@@ -89,4 +89,3 @@ kubectl describe pod my-first-pod
 ## Manifest 
 
 - configuration file of the object
-- 

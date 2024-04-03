@@ -93,4 +93,7 @@ kubectl describe pod my-first-pod
 demo.yaml
 
 syntax:
-   key: 
+   key: value
+
+ ## address
+     

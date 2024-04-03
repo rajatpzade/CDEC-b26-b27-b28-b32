@@ -18,8 +18,8 @@ spec:
       - containerPort: 8080
         protocol: TCP       
 
-  - name: myapp-conatiner2  
+  - name: myapp-conatiner3 
     image: http
     ports:
-      - containerPort: 8080
+      - containerPort: 80
         protocol: TCP     

@@ -5,4 +5,5 @@ metadata:
 spec: 
   containers:
     - name: my-pod-container
-    i
+      image: nginx
+    

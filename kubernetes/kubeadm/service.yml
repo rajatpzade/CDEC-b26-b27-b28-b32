@@ -7,5 +7,6 @@ spec:
   name: myapp
 ports:
   - protocol: TCP
-  
+    name: http
+    port
     targetPort: <Target Port>

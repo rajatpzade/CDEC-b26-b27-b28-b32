@@ -103,4 +103,5 @@ syntax:
    Data type : 
 
    number : 1,2,3,4
-   string : india , pune   
+   string : india , pune 
+   bool :  True and   

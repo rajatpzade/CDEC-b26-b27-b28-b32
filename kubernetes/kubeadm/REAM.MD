@@ -109,3 +109,4 @@ syntax:
    List: [hero,Honda,yamaha,123,hero]
    set: { hero, yamaha}. --unique value
    Distionary /map : {key:value , key:value}
+

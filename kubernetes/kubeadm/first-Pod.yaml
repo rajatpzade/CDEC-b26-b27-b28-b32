@@ -15,4 +15,5 @@ spec:
     ports:
       - containerPort: <Port>
   
-  - name: 
+  - name: mysecond-pod
+    image:

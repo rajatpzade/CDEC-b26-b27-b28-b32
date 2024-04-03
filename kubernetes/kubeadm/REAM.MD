@@ -91,3 +91,6 @@ kubectl describe pod my-first-pod
 - configuration file of the object
 
 demo.yaml
+
+syntax:
+   key: 

@@ -8,5 +8,5 @@ spec:
 ports:
   - protocol: TCP
     name: http
-    port
-    targetPort: <Target Port>
+    port: 80
+    targetPort: 80

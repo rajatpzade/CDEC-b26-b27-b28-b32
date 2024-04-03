@@ -107,3 +107,4 @@ syntax:
    number : 1,2,3,4
    string : india , pune 
    boolean :  True and False 
+   List: []

@@ -99,9 +99,10 @@ syntax:
    city: pune
    state: MH
    Country: India
+   pincode
 
    Data type : 
 
    number : 1,2,3,4
    string : india , pune 
-   bool :  True and   
+   boolean :  True and False 

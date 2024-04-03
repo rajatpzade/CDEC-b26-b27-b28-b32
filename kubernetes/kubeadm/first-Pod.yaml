@@ -19,7 +19,7 @@ spec:
         protocol: TCP       
 
   - name: myapp-conatiner2  
-    image: tomcat
+    image: http
     ports:
       - containerPort: 8080
         protocol: TCP     

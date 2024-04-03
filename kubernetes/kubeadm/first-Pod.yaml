@@ -9,4 +9,5 @@ spec:
   - name: myapp-conatiner
     image: nginx
     ports:
-      - containerPort: <Port>
+      - containerPort: 80
+      

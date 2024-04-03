@@ -107,5 +107,5 @@ syntax:
    number : 1,2,3,4
    string : india , pune 
    boolean :  True and False 
-   List: [hero,Honda,yamaha,123]
-   set: {}
+   List: [hero,Honda,yamaha,123,hero]
+   set: { hero, yamaha}

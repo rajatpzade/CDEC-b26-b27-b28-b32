@@ -100,4 +100,7 @@ syntax:
    state: MH
    Country: India
 
-   Data type : numebr 1,  
+   Data type : 
+
+   number : 1,2,3,4
+     

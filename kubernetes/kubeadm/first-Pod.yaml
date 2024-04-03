@@ -3,4 +3,5 @@ kind: Pod
 metadata: 
   name: my-pod
 spec: 
-  co  
+  containers:
+    - name

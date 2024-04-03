@@ -8,5 +8,5 @@ spec:
   containers:
   - name: myapp
     image: <Image>
-   ports:
+     ports:
       - containerPort: <Port>

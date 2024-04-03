@@ -6,7 +6,7 @@ metadata:
     name: myapp
 spec:
   containers:
-  - name: myapp
-    image: <Image>
+  - name: myapp-conatiner
+    image: nginx
     ports:
       - containerPort: <Port>

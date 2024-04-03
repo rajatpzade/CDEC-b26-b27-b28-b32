@@ -99,7 +99,8 @@ syntax:
    city: pune
    state: MH
    Country: India
-   pincode
+   pincode: 411001
+   indian: true
 
    Data type : 
 

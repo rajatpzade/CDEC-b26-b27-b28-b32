@@ -12,4 +12,8 @@ spec:
       - containerPort: 80
         protocol: TCP 
 
-        
+  - name: myapp-conatiner2
+    image: nginx
+    ports:
+      - containerPort: 80
+        protocol: TCP       

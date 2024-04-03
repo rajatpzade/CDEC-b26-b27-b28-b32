@@ -13,7 +13,7 @@ spec:
         protocol: TCP 
 
   - name: myapp-conatiner2
-    image: nginx
+    image: tomcat
     ports:
       - containerPort: 80
         protocol: TCP       

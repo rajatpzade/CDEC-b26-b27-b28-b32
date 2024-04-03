@@ -4,4 +4,5 @@ metadata:
   name: my-pod
 spec: 
   containers:
-    - name
+    - name: my-pod-container
+    i

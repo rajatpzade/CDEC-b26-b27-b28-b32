@@ -108,4 +108,5 @@ syntax:
    string : india , pune 
    boolean :  True and False 
    List: [hero,Honda,yamaha,123,hero]
-   set: { hero, yamaha}
+   set: { hero, yamaha}. --unique value
+   Dis

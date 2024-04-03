@@ -99,5 +99,5 @@ syntax:
    city: pune
    state: MH
    Country: India
-   
-     
+
+   Data type : numebr 1,  

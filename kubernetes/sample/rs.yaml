@@ -1,4 +1,3 @@
-...
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
@@ -21,9 +20,6 @@ spec:
         image: rajatpzade/sample:latest
         ports:
         - containerPort: 80
-
-
----
 
 ...
 

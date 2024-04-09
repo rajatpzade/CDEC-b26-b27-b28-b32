@@ -1,4 +1,5 @@
 ...
+
 apiVersion: v1
 kind: Pod
 metadata:
@@ -9,3 +10,20 @@ spec:
     image: rajatpzade/cbzpage:latest
     ports:
     - containerPort: 80
+
+---
+
+...
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+spec:
+  type: NodePort
+  selector:
+    app: nginx-pod  # Match the labels of your Pod
+  ports:
+  - port: 80
+    targetPort: 80
+    nodePort: 30000  # Specify the desired NodePort value (choose from 30000-32767)
+---

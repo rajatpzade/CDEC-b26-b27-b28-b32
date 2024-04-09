@@ -20,4 +20,4 @@ spec:
       - name: myapp-cont
         image: nginx
       containerPort:
-       -    
+       - po   

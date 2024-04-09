@@ -13,7 +13,7 @@ spec:
         app: myapp
     spec:
       containers:
-        - name: myapp
+        - name: my
           image: <Image>
           ports:
             - containerPort: <Port>

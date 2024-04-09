@@ -13,7 +13,7 @@ spec:
         app: myapp
     spec:
       containers:
-        - name: my
-          image: <Image>
+        - name: myrc-cont
+          image: nginx
           ports:
-            - containerPort: <Port>
+            - containerPort:80

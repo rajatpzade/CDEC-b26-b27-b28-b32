@@ -19,5 +19,5 @@ spec:
       containers:
       - name: myapp-cont
         image: nginx
-      containerPort:
-       - po   
+      ports:
+       - com  

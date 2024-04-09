@@ -8,3 +8,4 @@ spec:
     image: rajatpzade/cbzpage:latest
     ports:
     - containerPort: 80
+  

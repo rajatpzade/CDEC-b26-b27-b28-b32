@@ -5,6 +5,13 @@ metadata:
 spec:
   containers:
   - name: nginx-container
-    image: rajatpzade/cbzpage:latest
+    image: rajatpzade/nginx-image:latest
     ports:
     - containerPort: 80
+    resources:
+      requests:
+        cpu: "100m"  # Request 100 milliCPU (0.1 CPU core)
+        memory: "128Mi"  # Request 128 MB memory
+      limits:
+        cpu: "200m"  # Limit to 200 milliCPU (0.2 CPU core)
+        memory: "256Mi"  # Limit to 256 MB memory

@@ -3,7 +3,8 @@ kind: Service
 metadata:
   name: myapp
 spec:
-  selector:
+  selector: 
+  
   name: myapp
 ports:
   - protocol: TCP

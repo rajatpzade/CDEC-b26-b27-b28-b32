@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   - name: nginx-container
-    image: rajatpzade/nginx-image:latest
+    image: rajatpzade/cbzpage:latest
     ports:
     - containerPort: 80
     resources:

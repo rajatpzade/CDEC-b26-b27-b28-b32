@@ -18,9 +18,10 @@ spec:
     spec:
       containers:
       - name: myapp-cont
-        image: rajatpzade/sample:latest
-      ports:
-       - containerPort: 80  
+        image: nginx
+        ports:
+        - containerPort: 80
+
 
 ---
 

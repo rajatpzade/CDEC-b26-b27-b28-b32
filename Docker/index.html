@@ -7,26 +7,32 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            background-color: #f8f8f8;
             margin: 0;
             padding: 0;
             color: #333;
         }
         header {
-            background-color: #333;
+            background-color: #007bff;
             color: #fff;
             padding: 20px 0;
             text-align: center;
         }
+        .logo {
+            max-width: 200px;
+            margin: 0 auto;
+            display: block;
+        }
         .container {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 20px auto;
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 10px;
         }
         footer {
-            background-color: #333;
+            background-color: #007bff;
             color: #fff;
             text-align: center;
             padding: 10px 0;
@@ -37,7 +43,7 @@
         }
         h1 {
             margin-bottom: 20px;
-            color: #333;
+            color: #007bff;
         }
         ul {
             list-style-type: none;
@@ -45,19 +51,28 @@
             margin: 0;
         }
         li {
-            background-color: #f9f9f9;
+            background-color: #f0f0f0;
             border-radius: 5px;
             margin-bottom: 10px;
-            padding: 10px;
+            padding: 15px;
+            transition: background-color 0.3s ease;
         }
         li:hover {
             background-color: #e0e0e0;
             cursor: pointer;
         }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <header>
+        <img src="https://cloudblitz.in/wp-content/uploads/2022/04/Untitled_design__22_-removebg-preview.png" alt="CloudBlitz Logo" class="logo">
         <h1>Welcome to CloudBlitz Technologies</h1>
     </header>
     <div class="container">
@@ -66,6 +81,7 @@
             <li>Linux Fundamentals</li>
             <li>Azure DevOps</li>
         </ul>
+        <p>Visit our <a href="https://cloudblitz.in/" target="_blank">CloudBlitz</a> page for more information.</p>
     </div>
     <footer>
         &copy; 2024 CloudBlitz Technologies

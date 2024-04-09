@@ -20,4 +20,5 @@ spec:
       - name: myapp-cont
         image: nginx
       ports:
-       - com  
+       - containerPort: 80  
+       

@@ -13,6 +13,6 @@ spec:
     spec:
       containers:
       - name: myapp-container
-        image: rajatpzade/
+        image: rajatpzade/sample
         ports:
         - containerPort: 80

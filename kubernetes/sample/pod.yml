@@ -5,7 +5,7 @@ kind: Pod
 metadata:
   name: nginx-pod
   labels: 
-    
+     app: nginx-pod
 spec:
   containers:
   - name: nginx-container

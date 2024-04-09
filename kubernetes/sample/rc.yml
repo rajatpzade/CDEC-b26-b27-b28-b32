@@ -13,6 +13,6 @@ spec:
     spec:
       containers:
       - name: myapp-container
-        image: yourusername/mynginx:latest
+        image: rajatpzade/
         ports:
         - containerPort: 80

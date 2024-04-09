@@ -1,22 +1,22 @@
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: Deployment
 metadata:
-  name: frontend
-  labels:
-    app: myapp
-    tier: frontend
+  name: myapp
 spec:
-  replicas: 3
   selector:
     matchLabels:
-      tier: frontend
+      app: myapp
   template:
     metadata:
       labels:
-        tier: frontend
+        app: myapp
     spec:
       containers:
-        - name: myapp-cont
-          image: nginx
-          ports:
-            - containerPort: 80
+      - name: myapp
+        image: nginx
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: <Port>

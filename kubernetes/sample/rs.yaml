@@ -33,6 +33,6 @@ spec:
     spec:
       containers:
       - name: myapp-cont
-        image: raj
+        image: rajatpzade/sample:latest
         ports:
         - containerPort: 80

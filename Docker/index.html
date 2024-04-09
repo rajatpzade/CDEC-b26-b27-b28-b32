@@ -1,44 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Student Information</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello NGINX!</title>
     <style>
-        table {
-            border-collapse: collapse;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.5;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            left: 0;
+            bottom: 0;
             width: 100%;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
         }
     </style>
 </head>
 <body>
-    <h1>Student Information</h1>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Batch</th>
-            <th>Email</th>
-            <th>Phone</th>
-        </tr>
-        <tr>
-            <td>John Doe</td>
-            <td>Batch A</td>
-            <td>john.doe@example.com</td>
-            <td>123-456-7890</td>
-        </tr>
-        <tr>
-            <td>Jane Smith</td>
-            <td>Batch B</td>
-            <td>jane.smith@example.com</td>
-            <td>987-654-3210</td>
-        </tr>
-        <!-- Add more rows for other students -->
-    </table>
+    <header>
+        <h1>Hello NGINX!</h1>
+    </header>
+    <div class="container">
+        <p>Welcome to our NGINX demo website. This is a modern and advanced example of an HTML page.</p>
+        <p>You can customize this page further to suit your needs.</p>
+    </div>
+    <footer>
+        &copy; 2024 My NGINX Website
+    </footer>
 </body>
 </html>

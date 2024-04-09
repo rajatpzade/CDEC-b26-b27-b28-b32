@@ -17,5 +17,5 @@ spec:
         tier: frontend
     spec:
       containers:
-      - name: php-redis
+      - name: myapp-cont
         image: us-docker.pkg.dev/google-samples/containers/gke/gb-frontend:v5

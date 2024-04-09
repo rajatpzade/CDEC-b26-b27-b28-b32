@@ -33,6 +33,6 @@ spec:
     spec:
       containers:
       - name: myapp-cont
-        image: nginx
+        image: raj
         ports:
         - containerPort: 80

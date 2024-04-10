@@ -1,19 +1,32 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: myapp
+  name: my-replication-controller
 spec:
-  replicas: <Replicas>
+  replicas: 3
   selector:
-    app: myapp
+    app: my-app
   template:
     metadata:
-      name: myapp
       labels:
-        app: myapp
+        app: my-app
     spec:
       containers:
-        - name: myapp
-          image: <Image>
-          ports:
-            - containerPort: <Port>
+      - name: my-container
+        image: my-image:latest
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+spec:
+  selector:
+    app: my-app
+  type: NodePort
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+    nodePort: 30000   # Specify a node port within the range (30000-32767)

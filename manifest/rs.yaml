@@ -5,8 +5,9 @@ metadata:
 spec:
   replicas: 3
   selector:
-    matchLabels: [app: dev, app: prod]
+    matchLabels:
       app: my-app
+      app: 
   template:
     metadata:
       labels:

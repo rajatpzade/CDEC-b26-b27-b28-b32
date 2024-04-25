@@ -12,3 +12,5 @@ WORKDIR ./bin
 EXPOSE 8080
 
 CMD ./catalina.sh run
+
+https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.100/bin/apache-tomcat-8.5.100.tar.gz

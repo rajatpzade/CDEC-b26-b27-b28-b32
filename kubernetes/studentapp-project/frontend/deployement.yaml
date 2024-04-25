@@ -25,4 +25,4 @@ selector:
    matchLabels:
       app: frontend-app
 strategy: 
-   type:              
+   type: Ro            

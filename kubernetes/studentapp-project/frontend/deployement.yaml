@@ -55,7 +55,7 @@ spec:
             memory: "128Mi"
             cpu: "500m"
         ports:
-        - name: java
+        - name: http
           protocol: TCP
-          containerPort: 8080
+          containerPort: 80
 

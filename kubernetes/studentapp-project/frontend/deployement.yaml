@@ -23,4 +23,5 @@ spec:
 replicas: 2
 selector:
    matchLabels:
-      app: frontend-app        
+      app: frontend-app
+strategy              

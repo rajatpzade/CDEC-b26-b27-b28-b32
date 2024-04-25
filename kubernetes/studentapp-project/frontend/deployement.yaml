@@ -1,28 +1,28 @@
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: frontend-app
-spec:
-  selector:
-    matchLabels:
-      app: frontend-app
-  template:
-    metadata:
-      labels:
-        app: frontend-app
-    spec:
-      containers:
-      - name: frontend-app
-        image: rajatpzade/frontend-app:latest
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
-        ports:
-        - containerPort: 80
-replicas: 2
-selector:
-   matchLabels:
-      app: frontend-app
-strategy: 
-   type: RollingUpdate            
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: frontend-app
+# spec:
+#   selector:
+#     matchLabels:
+#       app: frontend-app
+#   template:
+#     metadata:
+#       labels:
+#         app: frontend-app
+#     spec:
+#       containers:
+#       - name: frontend-app
+#         image: rajatpzade/frontend-app:latest
+#         resources:
+#           limits:
+#             memory: "128Mi"
+#             cpu: "500m"
+#         ports:
+#         - containerPort: 80
+# replicas: 2
+# selector:
+#    matchLabels:
+#       app: frontend-app
+# strategy: 
+#    type: RollingUpdate            

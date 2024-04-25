@@ -1,6 +1,6 @@
 FROM centos:7
 
-LABEL author "shubham kalsait"
+LABEL author "Rajatpzade"
 LABEL description "my first docker file"
 
 RUN yum install httpd -y

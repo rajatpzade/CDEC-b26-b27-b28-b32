@@ -1,0 +1,25 @@
+FROM centos:7
+
+RUN yum install epel-release -y
+RUN yum install java-11-openjdk -y
+ENV DB_USER=admin
+ARG DB_PASSWORD
+# USER student
+ADD https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.95/bin/apache-tomcat-8.5.95.tar.gz ./
+# RUN curl -O https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.95/bin/apache-tomcat-8.5.95.tar.gz
+RUN tar -xzf apache-tomcat* -C /opt
+WORKDIR /opt/apache*
+# RUN cd /opt/apache*
+# RUN cd webapps/
+# RUN curl -O https://s3-us-west-2.amazonaws.com/studentapi-cit/student.war
+COPY ./student.war webapps/student.war
+# RUN cd ../bin
+# VOLUME [ "/mnt" ]
+WORKDIR ./bin
+
+EXPOSE 8080
+
+CMD ./catalina.sh run
+# CMD ["httpd", "-DFOREGROUND"]
+# ENTRYPOINT ./catalina.sh run
+# ENTRYPOINT ["httpd", "-DFOREGROUND"]

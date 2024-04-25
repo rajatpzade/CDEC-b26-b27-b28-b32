@@ -9,10 +9,10 @@ spec:
   template:
     metadata:
       labels:
-        app: myapp
+        app: frontend-app
     spec:
       containers:
-      - name: myapp
+      - name: frontend-app
         image: <Image>
         resources:
           limits:

@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: frontend-app
-        image: rajat
+        image: rajatpzade/frontend
         resources:
           limits:
             memory: "128Mi"

@@ -25,4 +25,37 @@
 #    matchLabels:
 #       app: frontend-app
 # strategy: 
-#    type: RollingUpdate            
+#    type: RollingUpdate       
+
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: frontend-app
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app: backend-app
+    spec:
+      containers:
+      - name: backend-app
+        image: rajatpzade/backend-app:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - name: java
+          protocol: TCP
+          containerPort: 8080
+

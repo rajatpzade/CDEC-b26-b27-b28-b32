@@ -12,8 +12,8 @@ spec:
         app: backend-app
     spec:
       containers:
-      - name: frontend-app
-        image: rajatpzade/frontend-app:latest
+      - name: backend-app
+        image: rajatpzade/backend-app:latest
         resources:
           limits:
             memory: "128Mi"

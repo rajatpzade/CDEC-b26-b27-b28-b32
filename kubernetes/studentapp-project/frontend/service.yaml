@@ -6,5 +6,5 @@ spec:
   selector:
     app: frontend-app
   ports:
-  - port: <Port>
+  - port: 80
     targetPort: <Target Port>

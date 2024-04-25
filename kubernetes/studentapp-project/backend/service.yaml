@@ -4,7 +4,7 @@ metadata:
   name: backend-service
 spec:
   selector:
-    app: frontend-app
+    app: backend-app
   ports:
   - port: 80
     targetPort: 80

@@ -1,7 +1,7 @@
 FROM centos:7
 
 RUN yum install epel-release -y && yum install java-11-openjdk -y
-ADD https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.96/bin/apache-tomcat-8.5.96.tar.gz ./
+ADD https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.100/bin/apache-tomcat-8.5.100.tar.gz ./
 RUN tar -xzf apache-tomcat-8.5.96.tar.gz -C /opt
 WORKDIR /opt/apache-tomcat-8.5.96
 COPY ./student.war webapps/student.war
@@ -13,4 +13,3 @@ EXPOSE 8080
 
 CMD ./catalina.sh run
 
-https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.100/bin/apache-tomcat-8.5.100.tar.gz

@@ -7,4 +7,5 @@ spec:
     app: frontend-app
   ports:
   - port: 80
-    targetPort: <Target Port>
+    targetPort: 80
+    protocol: 

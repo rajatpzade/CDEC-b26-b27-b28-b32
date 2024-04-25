@@ -20,4 +20,5 @@ spec:
             cpu: "500m"
         ports:
         - containerPort: 80
-        
+replicas: 2
+selector        

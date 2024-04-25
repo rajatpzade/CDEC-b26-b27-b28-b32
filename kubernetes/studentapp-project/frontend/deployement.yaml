@@ -45,11 +45,11 @@ spec:
   template:
     metadata:
       labels:
-        app: backend-app
+        app: frontend-app
     spec:
       containers:
-      - name: backend-app
-        image: rajatpzade/backend-app:latest
+      - name: frontend-app
+        image: rajatpzade/frontend-app:latest
         resources:
           limits:
             memory: "128Mi"

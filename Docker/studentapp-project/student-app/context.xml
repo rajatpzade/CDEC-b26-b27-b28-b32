@@ -25,7 +25,7 @@
     <Resource name="jdbc/TestDB" auth="Container" type="javax.sql.DataSource"
                 maxTotal="100" maxIdle="30" maxWaitMilis="10000"
                 username="admin" password="redhat123" driverClassName="com.mysql.jdbc.Driver"
-               url="jdbc:mysql://studentapp-db-instance.ct1cohpieqzz.ap-southeast-2.rds.amazonaws.com:3306/studentapp"/>
+               url="jdbc:mysql://database-1.c9qiysgcck91.sa-east-1.rds.amazonaws.com:3306/studentapp"/>
 
 
     <!-- Uncomment this to disable session persistence across Tomcat restarts -->

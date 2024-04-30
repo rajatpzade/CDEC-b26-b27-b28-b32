@@ -5,7 +5,7 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
-  ingressClassName: nginx-example
+  ingressClassName: nginx
   rules:
   - host: demo.com
     http:
@@ -14,13 +14,13 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: cloth-service
+            name: frontend-service
             port:
               number: 80
       - path: /student
         pathType: Prefix
         backend:
           service:
-            name: mobile-service
+            name: backend-service
             port:
               number: 8080

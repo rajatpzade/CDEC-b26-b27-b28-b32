@@ -10,8 +10,8 @@ spec:
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxUnavailable: 2
-      maxSurge: 2
+      maxUnavailable: 1
+      maxSurge: 1
   template:
     metadata:
       labels:
@@ -28,4 +28,3 @@ spec:
         - name: http
           protocol: TCP
           containerPort: 80
-  

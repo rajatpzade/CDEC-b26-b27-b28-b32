@@ -5,7 +5,7 @@ FROM centos:7
 RUN yum -y update && yum -y install httpd && yum clean all
 
 # Create /var/www/html directory
-RUN mkdir -p /var/www/html
+RUN mkdir -p /var/www/html/home
 
 # Create a home directory and set it as the working directory
 WORKDIR /home

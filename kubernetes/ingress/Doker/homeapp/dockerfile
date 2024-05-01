@@ -8,6 +8,9 @@ RUN yum -y update && yum -y install httpd && yum clean all
 COPY index.html /var/www/html/
 COPY styles.css /var/www/html/
 
+# Add ServerName directive to suppress the warning
+RUN echo "ServerName localhost" >> /etc/httpd/conf/httpd.conf
+
 # Expose port 80 to the outside world
 EXPOSE 80
 

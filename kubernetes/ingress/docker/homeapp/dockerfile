@@ -5,10 +5,10 @@ FROM centos:7
 RUN yum -y update && yum -y install httpd && yum clean all
 
 # Create /var/www/html directory
-RUN mkdir -p /var/www/html/home
+RUN mkdir -p /var/www/html
 
 # Create a home directory and set it as the working directory
-WORKDIR /var/www/html/home
+WORKDIR /home
 
 # Copy the HTML and CSS files into the home directory
 COPY index.html styles.css /home/

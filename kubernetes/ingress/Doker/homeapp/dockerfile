@@ -1,7 +1,7 @@
 FROM centos:7
 
 LABEL author "Rajatpzade"
-LABEL description "my first docker file"
+LABEL description "my Homeapp docker file"
 
 RUN yum install httpd -y
 ADD https://s3-us-west-2.amazonaws.com/studentapi-cit/index.html /var/www/html/index.html

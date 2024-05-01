@@ -14,7 +14,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: frontend-service
+            name: homeapp-service
             port:
               number: 80
       - path: /student

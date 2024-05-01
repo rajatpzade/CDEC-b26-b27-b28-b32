@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontend-app
+  name: homeapp
 spec:
   replicas: 2
   selector:

@@ -6,19 +6,19 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: frontend-app
+      app: homeapp
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxUnavailable: 1
-      maxSurge: 1
+      maxUnavailable: 2
+      maxSurge: 2
   template:
     metadata:
       labels:
-        app: frontend-app
+        app: homeapp
     spec:
       containers:
-      - name: frontend-app
+      - name: homeapp
         image: rajatpzade/frontend-app:latest
         resources:
           limits:

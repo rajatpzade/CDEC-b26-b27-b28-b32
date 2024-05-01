@@ -1,15 +1,18 @@
+# Use the CentOS 7 base image
 FROM centos:7
 
-RUN yum install epel-release -y && yum install java-11-openjdk -y
-ADD https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.100/bin/apache-tomcat-8.5.100.tar.gz ./
-RUN tar -xzf apache-tomcat-8.5.100.tar.gz -C /opt
-WORKDIR /opt/apache-tomcat-8.5.100
-COPY ./student.war webapps/student.war
-ADD https://s3-us-west-2.amazonaws.com/studentapi-cit/mysql-connector.jar lib/mysql-connector.jar
-COPY context.xml conf/context.xml
-WORKDIR ./bin
+# Install Apache HTTP Server
+RUN yum -y update && yum -y install httpd && yum clean all
 
-EXPOSE 8080
+# Copy the HTML and image files into the default Apache document root directory
+COPY index.html /var/www/html/
+COPY app_logo.png /var/www/html/
+COPY mobile_screenshot1.png /var/www/html/
+COPY mobile_screenshot2.png /var/www/html/
+COPY download_button.png /var/www/html/
 
-CMD ./catalina.sh run
+# Expose port 80 to the outside world
+EXPOSE 80
 
+# Start Apache HTTP Server in the foreground when the container starts
+CMD ["httpd", "-D", "FOREGROUND"]

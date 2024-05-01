@@ -10,14 +10,14 @@ spec:
   - host: demo.com
     http:
       paths:
-      - path: /
+      - path: /home
         pathType: Prefix
         backend:
           service:
             name: homeapp-service
             port:
               number: 80
-      - path: /student
+      - path: /mobile
         pathType: Prefix
         backend:
           service:

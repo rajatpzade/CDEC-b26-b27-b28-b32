@@ -4,7 +4,7 @@ metadata:
   name: mobileapp-service
 spec:
   selector:
-    app: app
+    app: mobileapp
   ports:
   - port: 80
     targetPort: 80

@@ -8,7 +8,7 @@ RUN yum -y update && yum -y install httpd && yum clean all
 RUN mkdir -p /var/www/html/home
 
 # Create a home directory and set it as the working directory
-WORKDIR /home
+WORKDIR /var/www/html/home
 
 # Copy the HTML and CSS files into the home directory
 COPY index.html styles.css /home/

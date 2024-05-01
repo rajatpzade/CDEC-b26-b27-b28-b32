@@ -1,0 +1,63 @@
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: backend-app
+# spec:
+#   selector:
+#     matchLabels:
+#       app: backend-app
+#   template:
+#     metadata:
+#       labels:
+#         app: backend-app
+#     spec:
+#       containers:
+#       - name: backend-app
+#         image: rajatpzade/backend-app:latest
+#         resources:
+#           limits:
+#             memory: "128Mi"
+#             cpu: "500m"
+#         ports:
+#         - name: java
+#           protocol: TCP
+#           containerPort: 8080
+# replicas: 2
+# selector:
+#    matchLabels:
+#       app: backend-app
+# strategy: 
+#    type: RollingUpdate            
+
+
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: backend-app
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app: backend-app
+    spec:
+      containers:
+      - name: backend-app
+        image: rajatpzade/backend-app:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - name: java
+          protocol: TCP
+          containerPort: 8080

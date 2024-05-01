@@ -3,26 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Homepage</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Home Microservice</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        section {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to our Microservice Homepage</h1>
+        <div class="container">
+            <h1>Welcome to our Home Microservice</h1>
+            <p>This is a sample homepage microservice for Kubernetes Ingress study</p>
+            <img src="https://via.placeholder.com/150" alt="Company Logo">
+        </div>
     </header>
     <nav>
-        <ul>
+        <ul class="container">
             <li><a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
-    <section>
+    <section class="container">
         <h2>About Us</h2>
-        <p>18, Sarvadarshan, Nal-stop karve Road, Shankarrao Kirloskar Marg, opposite Sarswat-co-op Bank, Pune, Maharashtra 41100</p>
+        <p>tur adipiscing elit. Vivamus volutpat consectetur ex, et consequat risus varius eu.</p>
     </section>
-    <section>
+    <section class="container">
         <h2>Our Services</h2>
         <ul>
             <li>Service 1</li>
@@ -31,7 +87,8 @@
         </ul>
     </section>
     <footer>
-        <p>&copy; 2024 Microservice Company. All rights reserved.</p>
+        <p>&copy; 2024 Home Microservice Company. All rights reserved.</p>
+        <p>You've reached the end of the page. Thanks for visiting!</p>
     </footer>
 </body>
 </html>

@@ -28,5 +28,4 @@ spec:
         - name: http
           protocol: TCP
           containerPort: 80
-
-rajatpzade/mobileapp
+  

@@ -4,9 +4,18 @@ FROM centos:7
 # Install Apache HTTP Server
 RUN yum -y update && yum -y install httpd && yum clean all
 
+# Create /var/www/html directory
+RUN mkdir -p /var/www/html
+
+# Create a home directory and set it as the working directory
+WORKDIR /home
+
+# Copy the HTML and CSS files into the home directory
+COPY index.html styles.css /home/
+
 # Copy the HTML and CSS files into the default Apache document root directory
-COPY index.html /var/www/html/
-COPY styles.css /var/www/html/
+RUN cp /home/index.html /var/www/html/
+RUN cp /home/styles.css /var/www/html/
 
 # Add ServerName directive to suppress the warning
 RUN echo "ServerName localhost" >> /etc/httpd/conf/httpd.conf

@@ -6,7 +6,7 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: homeapp
+      app: mobileapp
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -15,11 +15,11 @@ spec:
   template:
     metadata:
       labels:
-        app: homeapp
+        app: mobileapp
     spec:
       containers:
-      - name: homeapp
-        image: rajatpzade/homeapp:latest
+      - name: mobileapp
+        image: rajatpzade/mobileapp:latest
         resources:
           limits:
             memory: "128Mi"

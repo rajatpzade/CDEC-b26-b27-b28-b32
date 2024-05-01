@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: homeapp
-        image: rajatpzade/frontend-app:latest
+        image: rajatpzade/homeapp:latest
         resources:
           limits:
             memory: "128Mi"

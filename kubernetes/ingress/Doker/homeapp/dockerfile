@@ -1,16 +1,15 @@
+# Use the CentOS 7 base image
 FROM centos:7
 
-LABEL author "Rajatpzade"
-LABEL description "my Homeapp docker file"
+# Install Apache HTTP Server
+RUN yum -y update && yum -y install httpd && yum clean all
 
-RUN yum install httpd -y
-ADD https://s3-us-west-2.amazonaws.com/studentapi-cit/index.html /var/www/html/index.html
-RUN chmod 777 /var/www/html
-RUN chmod 664 /var/www/html/index.html
-COPY proxy.conf /etc/httpd/conf.d/proxy.conf
+# Copy the HTML and CSS files into the default Apache document root directory
+COPY index.html /var/www/html/
+COPY styles.css /var/www/html/
 
+# Expose port 80 to the outside world
 EXPOSE 80
 
-CMD httpd -DFOREGROUND
-
-
+# Start Apache HTTP Server in the foreground when the container starts
+CMD ["httpd", "-D", "FOREGROUND"]

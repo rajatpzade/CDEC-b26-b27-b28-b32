@@ -5,4 +5,3 @@
 .gitignore
 terraform/.terraform.lock.hcl
 terraform/.terraform
-hello rajat

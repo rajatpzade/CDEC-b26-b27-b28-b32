@@ -3,3 +3,5 @@
 .Dir
 .DS_Store
 .gitignore
+terraform/.terraform.lock.hcl
+ terraform/.terraform

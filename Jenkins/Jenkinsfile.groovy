@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-                
+               echo 'Thank You to Deploy' 
             }
         }        
     }

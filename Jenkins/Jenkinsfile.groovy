@@ -13,12 +13,12 @@ pipeline {
         }
         stage('Test') { 
             steps {
-                // 
+                echo 'hurreyyy test successfull'
             }
         }
         stage('Deploy') { 
             steps {
-                // 
+                
             }
         }        
     }

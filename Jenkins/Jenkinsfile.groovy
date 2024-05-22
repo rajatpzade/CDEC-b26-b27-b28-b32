@@ -3,10 +3,10 @@ pipeline {
     stages {
         stage('Pull') { 
             steps {
-                // 
+                git 'https://github.com/rajatpzade/studentapp.ui.git' 
             }
         }
-        stage('Test') { 
+        stage('Build') { 
             steps {
                 // 
             }

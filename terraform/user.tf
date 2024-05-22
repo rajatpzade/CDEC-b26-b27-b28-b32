@@ -1,3 +1,3 @@
-resource "aws_iam_user" "lb" {
-  name = "nipun"
+resource "aws_iam_user" "myiam" {
+  name = "Linux"
 }

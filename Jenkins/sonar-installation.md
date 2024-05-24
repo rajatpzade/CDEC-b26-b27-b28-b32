@@ -67,9 +67,13 @@ mysql>
     flush privileges;
 ```
 ### Install Sonarqube
-```shell
+```
 yum install unzip -y
+```
+```
 wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-7.9.1.zip
+```
+```
 cd /opt
 unzip ~/sonarqube-7.9.1.zip
 mv sonarqube-7.9.1 sonar

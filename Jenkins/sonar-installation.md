@@ -42,9 +42,14 @@ rpm -ivh bellsoft-jdk11.0.4-linux-amd64.rpm
 ### Configure Linux System for Sonarqube
 ```
 echo 'vm.max_map_count=262144' >/etc/sysctl.conf
-
+```
+```
 sysctl -p
+```
+```
 echo '* - nofile 80000' >>/etc/security/limits.conf
+```
+```
 sed -i -e '/query_cache_size/ d' -e '$ a query_cache_size = 15M' /etc/my.cnf
 systemctl restart mysqld
 ```

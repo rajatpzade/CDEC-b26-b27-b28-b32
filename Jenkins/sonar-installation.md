@@ -51,11 +51,14 @@ echo '* - nofile 80000' >>/etc/security/limits.conf
 ```
 ```
 sed -i -e '/query_cache_size/ d' -e '$ a query_cache_size = 15M' /etc/my.cnf
+```
+```
 systemctl restart mysqld
 ```
 ### Configure Database for Sonarqube
-```shell
+```
 mysql -p -u root
+
 mysql>
     create database sonarqube;
     create user 'sonarqube'@'localhost' identified by 'Redhat@123';

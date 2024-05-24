@@ -15,6 +15,9 @@ yum install mysql-server -y
 ```
 ```
 systemctl start mysqld
+```
+
+
 systemctl enable mysqld
 grep 'temporary password' /var/log/mysqld.log
 mysql_secure_installation

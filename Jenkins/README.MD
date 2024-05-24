@@ -7,13 +7,13 @@ yum install epel-release unzip vim -y
 yum install wget -y
 ```
 ```
-wget https://download.bell-
-sw.com/java/11.0.4/bellsoft-jdk11.0.4-linux-amd64.rpm
+wget https://download.bell-sw.com/java/11.0.4/bellsoft-jdk11.0.4-linux-amd64.rpm
 yum install  java -y
 rpm -ivh bellsoft-jdk11.0.4-linux-amd64.rpm
 ```
 
-#Mysql Configuration
+# Mysql Configuration
+
 rpm -ivh http://repo.mysql.com/mysql57-community-release-el7.rpm 
 yum install mysql-server -y
 #  rpm  --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022

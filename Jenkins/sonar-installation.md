@@ -95,7 +95,10 @@ sed -i -e '/#sonar.jdbc.username/ a sonar.jdbc.username=sonarqube' -e '/#sonar.j
 ```
 useradd sonar
 ```
+```
 chown sonar:sonar /opt/sonar/ -R
+```
+```
 sed -i -e '/^#RUN_AS_USER/ c RUN_AS_USER=sonar' /opt/sonar/bin/linux-x86-64/sonar.sh
 ```
 ### Start Sonarqube

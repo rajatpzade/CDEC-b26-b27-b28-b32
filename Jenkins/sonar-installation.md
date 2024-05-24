@@ -58,7 +58,8 @@ systemctl restart mysqld
 ### Configure Database for Sonarqube
 ```
 mysql -p -u root
-
+```
+```
 mysql>
     create database sonarqube;
     create user 'sonarqube'@'localhost' identified by 'Redhat@123';

@@ -1,6 +1,6 @@
 # Prerequesists for installation
 
-yum install epel-release unzip vim -y
+yum install epel-release unzip vim -y 
 yum install wget -y
 wget https://download.bell-sw.com/java/11.0.4/bellsoft-jdk11.0.4-linux-amd64.rpm
 yum install  java -y

@@ -27,8 +27,10 @@ mysql_secure_installation
 ```
 
 ### Install Java
-```shell
+```
 yum install java-11-amazon-corretto-1:11.0.18+10-1.amzn2023.x86_64 -y
+```
+```
 wget https://download.bell-sw.com/java/11.0.4/bellsoft-jdk11.0.4-linux-amd64.rpm
 rpm -ivh bellsoft-jdk11.0.4-linux-amd64.rpm
 #alternatives --config java

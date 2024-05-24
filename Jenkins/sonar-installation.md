@@ -6,8 +6,14 @@
 ### Install Database
 ```
 rpm -ivh http://repo.mysql.com/mysql57-community-release-el7.rpm
+```
+```
 rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
+```
+```
 yum install mysql-server -y
+```
+```
 systemctl start mysqld
 systemctl enable mysqld
 grep 'temporary password' /var/log/mysqld.log

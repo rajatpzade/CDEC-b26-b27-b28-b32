@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-               13.38.102.52
+               
             }
         }        
     }

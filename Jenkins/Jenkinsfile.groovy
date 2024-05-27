@@ -25,4 +25,3 @@ pipeline {
         }        
     }
 }
-Jenkins/Jenkinsfile.groovy

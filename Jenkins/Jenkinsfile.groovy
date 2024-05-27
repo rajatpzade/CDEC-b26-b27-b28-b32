@@ -14,7 +14,7 @@ pipeline {
         stage('test') { 
             steps {
                  withSonarQubeEnv ('sonar') {
-             sh ' mvn sonar:sonar '
+             sh ' /opt/maven/bin/mvn sonar:sonar '
                 }
             }
         }

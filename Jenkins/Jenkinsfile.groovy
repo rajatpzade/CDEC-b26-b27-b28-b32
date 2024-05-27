@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-               echo 'Thank You to Deploy' 
+               13.38.102.52
             }
         }        
     }

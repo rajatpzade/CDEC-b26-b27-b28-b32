@@ -3,21 +3,27 @@ kind: Deployment
 metadata:
   name: my-deployment
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
-      app: my-app
+      app: frontend-app
   strategy:
     type: RollingUpdate
     rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
   template:
     metadata:
       labels:
-        app: my-app
+        app: frontend-app
     spec:
       containers:
-      - name: my-app-cont
+      - name: frontend-app
         image: nginx
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
         ports:
         - name: http
           protocol: TCP
